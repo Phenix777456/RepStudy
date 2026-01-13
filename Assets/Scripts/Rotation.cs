@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
     [SerializeField] private float _rotateSpeed;
  
     void Update()
     {
-        Rotating();
+        Rotate();
     }
 
-    private void Rotating()
+    private void Rotate()
     {
         transform.rotation *= Quaternion.Euler(0, _rotateSpeed * Time.deltaTime, 0);
     }

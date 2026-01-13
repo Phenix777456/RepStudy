@@ -6,10 +6,10 @@ public class Ìovement : MonoBehaviour
 
     void Update()
     {
-        Moveing();
+        Move();
     }
     
-    private void Moveing()
+    private void Move()
     {
         transform.Translate(0, 0, -_moveSpeed * Time.deltaTime);
     }
